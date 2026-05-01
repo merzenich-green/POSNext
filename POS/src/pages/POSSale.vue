@@ -187,7 +187,9 @@
 						</svg>
 						<span>{{ __("Lock Screen") }}</span>
 					</button>
-				</template>
+				
+<div style="position:fixed;bottom:0;left:0;right:0;text-align:center;padding:10px;background:#f8f9fa;border-top:1px solid #e0e0e0;font-size:13px;color:#6b7280;z-index:100;">Crafted by Eddie.</div>
+</template>
 				<template #additional-actions>
 					<button
 						v-if="canAccessShiftActions"
@@ -209,7 +211,9 @@
 						</svg>
 						<span>{{ __("Close Shift") }}</span>
 					</button>
-				</template>
+				
+<div style="position:fixed;bottom:0;left:0;right:0;text-align:center;padding:10px;background:#f8f9fa;border-top:1px solid #e0e0e0;font-size:13px;color:#6b7280;z-index:100;">Crafted by Eddie.</div>
+</template>
 			</POSHeader>
 
 			<!-- Main Content: Responsive Layout -->
@@ -692,7 +696,9 @@
 							{{ __("Remove all {0} items from cart?", [cartStore.itemCount]) }}
 						</p>
 					</div>
-				</template>
+				
+<div style="position:fixed;bottom:0;left:0;right:0;text-align:center;padding:10px;background:#f8f9fa;border-top:1px solid #e0e0e0;font-size:13px;color:#6b7280;z-index:100;">Crafted by Eddie.</div>
+</template>
 				<template #actions>
 					<div class="flex gap-2 w-full">
 						<Button
@@ -711,7 +717,9 @@
 							{{ __("Clear All") }}
 						</Button>
 					</div>
-				</template>
+				
+<div style="position:fixed;bottom:0;left:0;right:0;text-align:center;padding:10px;background:#f8f9fa;border-top:1px solid #e0e0e0;font-size:13px;color:#6b7280;z-index:100;">Crafted by Eddie.</div>
+</template>
 			</Dialog>
 
 			<!-- Logout Confirmation Dialog -->
@@ -862,7 +870,9 @@
 							</button>
 						</div>
 					</div>
-				</template>
+				
+<div style="position:fixed;bottom:0;left:0;right:0;text-align:center;padding:10px;background:#f8f9fa;border-top:1px solid #e0e0e0;font-size:13px;color:#6b7280;z-index:100;">Crafted by Eddie.</div>
+</template>
 			</Dialog>
 
 			<!-- Success Dialog -->
@@ -898,7 +908,9 @@
 							{{ __("Paid: {0}", [formatCurrency(uiStore.lastPaidAmount)]) }}
 						</p>
 					</div>
-				</template>
+				
+<div style="position:fixed;bottom:0;left:0;right:0;text-align:center;padding:10px;background:#f8f9fa;border-top:1px solid #e0e0e0;font-size:13px;color:#6b7280;z-index:100;">Crafted by Eddie.</div>
+</template>
 				<template #actions>
 					<div class="flex gap-2">
 						<Button variant="subtle" @click="uiStore.showSuccessDialog = false">
@@ -917,7 +929,9 @@
 							{{ __("Print Invoice") }}
 						</Button>
 					</div>
-				</template>
+				
+<div style="position:fixed;bottom:0;left:0;right:0;text-align:center;padding:10px;background:#f8f9fa;border-top:1px solid #e0e0e0;font-size:13px;color:#6b7280;z-index:100;">Crafted by Eddie.</div>
+</template>
 			</Dialog>
 
 			<!-- Error Dialog -->
@@ -937,7 +951,9 @@
 							<p class="text-xs text-gray-500">{{ uiStore.errorDetails }}</p>
 						</div>
 					</div>
-				</template>
+				
+<div style="position:fixed;bottom:0;left:0;right:0;text-align:center;padding:10px;background:#f8f9fa;border-top:1px solid #e0e0e0;font-size:13px;color:#6b7280;z-index:100;">Crafted by Eddie.</div>
+</template>
 				<template #actions>
 					<div class="flex justify-between items-center w-full">
 						<Button
@@ -965,7 +981,9 @@
 							</Button>
 						</div>
 					</div>
-				</template>
+				
+<div style="position:fixed;bottom:0;left:0;right:0;text-align:center;padding:10px;background:#f8f9fa;border-top:1px solid #e0e0e0;font-size:13px;color:#6b7280;z-index:100;">Crafted by Eddie.</div>
+</template>
 			</Dialog>
 
 			<!-- Clear Cache Overlay -->
@@ -977,12 +995,16 @@
 			/>
 
 			<!-- Footer -->
-			<POSFooter />
-		</template>
+			
+		
+<div style="position:fixed;bottom:0;left:0;right:0;text-align:center;padding:10px;background:#f8f9fa;border-top:1px solid #e0e0e0;font-size:13px;color:#6b7280;z-index:100;">Crafted by Eddie.</div>
+</template>
 
 		<!-- Session Lock Screen (outside v-if/v-else so it renders even during loading) -->
 		<SessionLockScreen />
 	</div>
+
+<div style="position:fixed;bottom:0;left:0;right:0;text-align:center;padding:10px;background:#f8f9fa;border-top:1px solid #e0e0e0;font-size:13px;color:#6b7280;z-index:100;">Crafted by Eddie.</div>
 </template>
 
 <script>
@@ -999,7 +1021,7 @@ import ShiftOpeningDialog from "@/components/ShiftOpeningDialog.vue";
 import ClearCacheOverlay from "@/components/common/ClearCacheOverlay.vue";
 import SessionLockScreen from "@/components/common/SessionLockScreen.vue";
 import LoadingSpinner from "@/components/common/LoadingSpinner.vue";
-import POSFooter from "@/components/common/POSFooter.vue";
+
 import ManagementSlider from "@/components/pos/ManagementSlider.vue";
 import POSHeader from "@/components/pos/POSHeader.vue";
 import BatchSerialDialog from "@/components/sale/BatchSerialDialog.vue";
