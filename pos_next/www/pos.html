@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/assets/pos_next/pos/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+  <meta name="theme-color" content="#1E3A5F" />
+  <meta name="description" content="Paiges Picks - Point of Sale" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Paiges Picks" />
+  <link rel="apple-touch-icon" href="/assets/pos_next/pos/favicon.png" />
+  <title>Paiges Picks</title>
+  <script type="module" crossorigin src="/assets/pos_next/pos/assets/index-BbOQ9taY.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/pos_next/pos/assets/index-Bzw-RQo0.css">
+  <link rel="manifest" href="/assets/pos_next/pos/manifest.webmanifest">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+      {% for key in boot %}
+      window["{{ key }}"] = {{ boot[key] | tojson }};
+      {% endfor %}
+  </script>
+</body>
+</html>
